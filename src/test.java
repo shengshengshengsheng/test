@@ -1,25 +1,22 @@
-import Money.Loan;
-
-import java.util.Scanner;
+import course.Course;
 
 public class test {
-    /**
-     * 测试变量的作用域
-     * */
     public static void main(String[] args) {
-        Scanner input=new Scanner(System.in);
-        System.out.println("Enter annualInterestRate,for example 8.25:");
-        double annualInterestRate=input.nextDouble();
-        System.out.println("Enter the total number of years as an integer:");
-        int numberOfYears=input.nextInt();
-        System.out.println("Enter loan amount,for example 1200000:");
-        double loanAmount=input.nextDouble();
-        Loan loan=new Loan(annualInterestRate,numberOfYears,loanAmount);
-        System.out.printf("the loan was created on %s\n"+
-                "the monthly payment is %.2f\n"+
-                "the total payment is %.2f\n",
-                loan.getLoanDate().toString(),
-                loan.getMonthlyPayment(),
-                loan.getTotalPayment());
+        Course course1=new Course("data Structure");
+        Course course2=new Course("database Systems");
+        course1.addStudent("peter Jones");
+        course1.addStudent("Kim Smith");
+        course1.addStudent("Anne kennedy");
+
+        course2.addStudent("peter Jones");
+        course2.addStudent("Kim Smith");
+        System.out.println("the number of students in course1:"+course1.getNumberOfStudents());
+        String[] students=course1.getStudents();
+        for(int i=0;i<course1.getNumberOfStudents();i++)
+        {
+            System.out.println(students[i]+", ");
+        }
+        System.out.println();
+        System.out.print("number of students in course2 is:"+course2.getNumberOfStudents());
     }
 }
