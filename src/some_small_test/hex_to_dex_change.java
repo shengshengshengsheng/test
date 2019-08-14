@@ -1,3 +1,5 @@
+package some_small_test;
+
 import java.util.Scanner;
 /**
  * 十六进制转换为十进制

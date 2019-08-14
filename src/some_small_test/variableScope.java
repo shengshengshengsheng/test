@@ -1,3 +1,5 @@
+package some_small_test;
+
 public class variableScope {
         /**
          * 测试变量的作用域

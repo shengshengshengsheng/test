@@ -1,3 +1,5 @@
+package some_small_test;
+
 import java.util.Scanner;
 /**
  * 用户输入年月，打印输出当月的日历

@@ -1,3 +1,5 @@
+package some_small_test;
+
 public class CalculateTotalAreaOfCircle {
         public static void main(String[] args) {
             CircleWithPrivateDataField[] circleArray=createCircleArray();

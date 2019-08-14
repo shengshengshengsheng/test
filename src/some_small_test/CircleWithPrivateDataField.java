@@ -1,3 +1,5 @@
+package some_small_test;
+
 public class CircleWithPrivateDataField {
     private double radious;
     private double PI=3.14159265358;

@@ -1,3 +1,5 @@
+package some_small_test;
+
 public class calculate_right_answer {
         public static void main(String[] args) {
             char[][] student_answer={

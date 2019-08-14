@@ -1,3 +1,5 @@
+package some_small_test;
+
 import java.util.Scanner;
 /**
  * 计算五角星的面积
