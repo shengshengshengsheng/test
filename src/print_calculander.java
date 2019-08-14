@@ -16,7 +16,7 @@ public class print_calculander {
             if(isLeapYear(year)&&month==2)
                 day_of_month++;
             String month_name=get_month_name(month);
-            System.out.printf("%10d%-10s",year,month_name);
+            System.out.printf("%15d%-20s",year,month_name);
             System.out.printf("\n");
             System.out.printf("------------------------------------\n");
             print_cal(firstDay,day_of_month);
