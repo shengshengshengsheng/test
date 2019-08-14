@@ -1,17 +1,21 @@
-import Stack.StackOfIntegers;
-
-import java.math.BigInteger;
+import geometry.CircleExtendsGeometricObject;
+import geometry.RectangleExtendsGeometricObject;
 
 public class test {
     public static void main(String[] args) {
-        System.out.println("50! is\n"+factorial(50));
-    }
+        CircleExtendsGeometricObject circleExtendsGeometricObject=new CircleExtendsGeometricObject(1);
+        System.out.println("A circle "+circleExtendsGeometricObject.toString());
+        System.out.println("the color is "+circleExtendsGeometricObject.getColor());
+        System.out.println("the radius is "+circleExtendsGeometricObject.getRadius());
+        System.out.println("the area is "+circleExtendsGeometricObject.getArea());
+        System.out.println("the diameter is "+circleExtendsGeometricObject.getPerimeter());
 
-    private static BigInteger factorial(int n) {
-        BigInteger bigInteger=BigInteger.ONE;
-        for(int i=1;i<=n;i++)
-            bigInteger=bigInteger.multiply(new BigInteger(i+""));
-        return bigInteger;
-    }
 
+        RectangleExtendsGeometricObject rectangleExtendsGeometricObject=new RectangleExtendsGeometricObject(2,4);
+        System.out.println("\nA rectangle "+rectangleExtendsGeometricObject.toString());
+        System.out.println("the color is "+rectangleExtendsGeometricObject.getColor());
+        System.out.println("the height is "+rectangleExtendsGeometricObject.getHeight());
+        System.out.println("the area is "+rectangleExtendsGeometricObject.getArea());
+        System.out.println("the diameter is "+rectangleExtendsGeometricObject.getPerimeter());
+    }
 }
