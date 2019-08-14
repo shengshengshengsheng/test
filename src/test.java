@@ -1,20 +1,25 @@
+import Money.Loan;
+
+import java.util.Scanner;
+
 public class test {
     /**
      * 测试变量的作用域
      * */
-    private static int i=0;
-    private static int j=0;
     public static void main(String[] args) {
-        int i=2;
-        int k=3;
-        {
-            int j=3;
-            System.out.println("i="+i);//输出i=2
-            System.out.println("j="+j);//输出j=3
-        }
-        k=i+j;
-        System.out.println("k="+k);//输出k=2
-        System.out.println("i="+i);//输出i=2
-        System.out.println("j="+j);//输出j=0
+        Scanner input=new Scanner(System.in);
+        System.out.println("Enter annualInterestRate,for example 8.25:");
+        double annualInterestRate=input.nextDouble();
+        System.out.println("Enter the total number of years as an integer:");
+        int numberOfYears=input.nextInt();
+        System.out.println("Enter loan amount,for example 1200000:");
+        double loanAmount=input.nextDouble();
+        Loan loan=new Loan(annualInterestRate,numberOfYears,loanAmount);
+        System.out.printf("the loan was created on %s\n"+
+                "the monthly payment is %.2f\n"+
+                "the total payment is %.2f\n",
+                loan.getLoanDate().toString(),
+                loan.getMonthlyPayment(),
+                loan.getTotalPayment());
     }
 }
