@@ -1,5 +1,7 @@
 package Stack;
-
+/**
+ * 栈
+ * */
 public class StackOfIntegers {
     private int[] elements;
     private int size;
