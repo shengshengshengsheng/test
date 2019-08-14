@@ -1,6 +1,6 @@
-import Stack.StackOfIntegers;
+package Stack;
 
-public class test {
+public class test_Stack {
     public static void main(String[] args) {
         StackOfIntegers stackOfIntegers=new StackOfIntegers();
         for(int i=0;i<10;i++)
