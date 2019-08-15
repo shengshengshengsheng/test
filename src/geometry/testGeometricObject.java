@@ -2,6 +2,7 @@ package geometry;
 
 public class testGeometricObject {
         public static void main(String[] args) {
+
             CircleExtendsGeometricObject circleExtendsGeometricObject=new CircleExtendsGeometricObject(1);
             System.out.println("A circle "+circleExtendsGeometricObject.toString());
             System.out.println("the color is "+circleExtendsGeometricObject.getColor());

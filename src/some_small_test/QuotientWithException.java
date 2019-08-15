@@ -1,6 +1,8 @@
+package some_small_test;
+
 import java.util.Scanner;
 
-public class test {
+public class QuotientWithException {
     public static double quotient(double number1,double number2)
     {
         if (number2==0)
@@ -25,4 +27,3 @@ public class test {
     }
 
 }
-
